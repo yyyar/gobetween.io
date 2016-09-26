@@ -1,0 +1,137 @@
+header
+  height 72px
+  min-height 72px
+
+.main
+  &-section
+    position relative
+
+  &-content
+    width 100%
+    text-align center
+    color #ffffff
+    margin-top 40px
+    padding-bottom 60px
+
+  &-title
+    font-family $font-varelaRound
+    font-size 30px
+    margin-bottom 40px
+
+  &-sub__title
+    font-family $font-sansPro
+    font-size 19px
+    margin-bottom 40px
+
+#particles-js
+  position absolute
+  width 100%
+  z-index 0
+
+.how-it-works
+  padding 60px 0
+  text-align center
+
+  & img
+    width 50%
+
+.features
+  text-align center
+  padding 60px 0
+  background-image linear-gradient(to bottom, rgba(222, 230, 242, 0.4), rgba(182, 235, 250, 0.21)), linear-gradient(rgba(17, 122, 201, 0.07), rgba(17, 122, 201, 0.07))
+
+.feature
+
+  &-item__wrap
+    display flex
+    flex-direction row
+    flex-wrap wrap
+    justify-content center
+    align-content flex-start
+    align-items flex-start
+
+  &-item
+    font-family $font-sansPro
+    font-size 19px
+    text-align center
+    color #585858
+    margin-bottom 20px
+    width 100%
+    display inline-block
+
+  &-img
+    position relative
+    width 70px
+    margin 0 auto 10px
+
+    & img
+      width 100%
+
+    & .img-dots
+      position absolute
+      height 120px
+      width 50px
+      top -55px
+      left -65px
+      display block
+
+    & .img-dots__right
+      top -50px
+      right -75px
+      left auto
+
+  &-title
+    font-weight bold
+    color #0c6dbf
+    margin-bottom 15px
+
+  &-desc
+    line-height 25px
+    margin-bottom 10px
+
+  &-link
+    color #0c6ec0
+    text-decoration none
+
+    &:hover,
+    &:active
+      color #0d8dee
+      text-decoration underline
+
+
+@media (min-width: 768px)
+  .feature-item
+    width 50%
+
+@media (min-width: 1200px)
+  header
+    height 170px
+    min-height 170px
+
+  .main
+    &-section
+      position relative
+      height 100vh
+
+    &-content
+      position absolute
+      margin-top 0
+      padding 0
+      top: 50%;
+      transform: translateY(-25%);
+
+    &-title
+      font-family $font-varelaRound
+      font-size 30px
+      margin-bottom 20px
+
+    &-sub__title
+      font-family $font-sansPro
+      font-size 19px
+      margin-bottom 100px
+
+    &-buttons
+      display inline-block
+
+  .feature-item
+      width 33%

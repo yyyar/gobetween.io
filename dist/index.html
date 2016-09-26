@@ -2,11 +2,128 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gobetween</title>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro|Varela+Round" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
+    <script src="js/particles.js"></script>
     <script src="js/main.js"></script>
 </head>
 <body>
-    <img src="i/logo.png" alt="logo">
+    <section class="main-section bg-gradient">
+        <div id="particles-js"></div>
+        <header>
+            <div class="content-wrap">
+                <a href="#" class="nav-logo">gobetween</a>
+                <div class="nav-mobile__sandwich">
+                    <input type="checkbox" id="mobile-sandwich" />
+                    <label for="mobile-sandwich" class="mobile-sandwich">
+                        <div class="sandwich diagonal part-1"></div>
+                        <div class="sandwich horizontal"></div>
+                        <div class="sandwich diagonal part-2"></div>
+                    </label>
+                </div>
+                <nav>
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="#" class="nav-link">Documetation</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Community</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Downloads</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div class="main-content">
+            <div class="content-wrap">
+                <h1 class="main-title">Modern & minimalistic load balancer for the Cloud era</h1>
+                <h3 class="main-sub__title">Gobetween fofline design drag end drop</h3>
+                <div class="main-buttons mb-m-30 mr-l-20">
+                    <a href="#" class="btn btn-primary">Get Started</a>
+                </div>
+                <div class="main-buttons ml-l-20">
+                    <a href="#" class="btn btn-primary">Downloads</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="how-it-works">
+        <div class="content-wrap">
+            <h1 class="section-title">How it works</h1>
+            <img src="i/svg/Sheme.svg" alt="" />
+        </div>
+    </section>
+    <section class="features">
+        <div class="content-wrap">
+            <h1 class="section-title">Features</h1>
+            <div class="feature-item__wrap">
+                <div class="feature-item">
+                    <div class="feature-img">
+                        <img class="img-dots img-dots__left" src="i/svg/Dots_1.svg" alt="">
+                        <img src="i/svg/Load_balancing_icon.svg" alt="icon">
+                        <img class="img-dots img-dots__right" src="i/svg/Dots_2.svg" alt="">
+                    </div>
+                    <h3 class="feature-title">L4 Load Balancing</h3>
+                    <div class="feature-desc">
+                        Blazing fast TCP load balancing suitable for high-load systems.
+                    </div>
+                    <a href="#" class="feature-link">Read More</a>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-img">
+                        <img class="img-dots img-dots__left" src="i/svg/Dots_3.svg" alt="">
+                        <img src="i/svg/Backends_discovery.svg" alt="icon">
+                        <img class="img-dots img-dots__right" src="i/svg/Dots_4.svg" alt="">
+                    </div>
+                    <h3 class="feature-title">Powerful Backends Discovery</h3>
+                    <div class="feature-desc">
+                        Define load balancing backends as static list, query DNS SRV server, docker/swarm, consul, text/json, or use custom script.
+                    </div>
+                    <a href="#" class="feature-link">Read More</a>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-img">
+                        <img class="img-dots img-dots__left" src="i/svg/Dots_5.svg" alt="">
+                        <img src="i/svg/Healthchecks.svg" alt="icon">
+                        <img class="img-dots img-dots__right" src="i/svg/Dots_6.svg" alt="">
+                    </div>
+                    <h3 class="feature-title">Flexible Healthchecks</h3>
+                    <div class="feature-desc">
+                        Use build-in tcp ping healthcheck or define your own in custom scripts.
+                    </div>
+                    <a href="#" class="feature-link">Read More</a>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-img">
+                        <img class="img-dots img-dots__left" src="i/svg/Dots_7.svg" alt="">
+                        <img src="i/svg/Single_Binary.svg" alt="icon">
+                        <img class="img-dots img-dots__right" src="i/svg/Dots_8.svg" alt="">
+                    </div>
+                    <h3 class="feature-title">Single Binary Distribution</h3>
+                    <div class="feature-desc">
+                        Only one all-sufficient binary executable + clear TOML config file.
+                    </div>
+                    <a href="#" class="feature-link">Read More</a>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-img">
+                        <img class="img-dots img-dots__left" src="i/svg/Dots_9.svg" alt="">
+                        <img src="i/svg/Multi-Platform.svg" alt="icon">
+                        <img class="img-dots img-dots__right" src="i/svg/Dots_10.svg" alt="">
+                    </div>
+                    <h3 class="feature-title">Multi-Platform</h3>
+                    <div class="feature-desc">
+                        Works on Linux, Windows & Darwin.
+                    </div>
+                    <a href="#" class="feature-link">Read More</a>
+                </div>
+            </div>
+            <br />
+            <a href="#" class="btn btn-primary">Get Started</a>
+        </div>
+    </section>
+    <footer>
+        <a href="" class="github-link"></a>
+        <br />
+        <span>Copyright 2016</span>
+    </footer>
 </body>
 </html>

@@ -1,0 +1,107 @@
+.nav
+  &-logo
+    display block
+    float left
+    background url("../i/svg/logo.svg") no-repeat center
+    background-size 100%
+    color #fff
+    text-indent -3000px
+    width 290px
+    line-height 72px
+    margin-left 30px
+
+  &-list
+    list-style-type: none;
+    float right
+    line-height 170px
+    display none
+
+  &-item
+    float left
+
+  &-link
+    display inline-block
+    line-height 31px
+    margin 0 30px
+    font-size 19px
+    font-family $font-varelaRound
+    color #54acee
+    text-decoration none
+
+    &:hover,
+    &:active,
+    &.active
+      color #fff
+      border-bottom  1px solid #ffffff
+
+.nav-mobile__sandwich
+
+  position relative
+  height 72px
+  width 30px
+  display block
+  float right
+  margin-right 30px
+
+  & *
+    transition all 0.3s
+    box-sizing border-box
+
+  & input[type=checkbox]
+    display none
+
+    &:checked ~ .mobile-sandwich
+      & .horizontal
+        opacity 0
+
+      & .diagonal.part-1
+        transform rotate(135deg)
+        margin-top 10px
+
+      & .diagonal.part-2
+        transform rotate(-135deg)
+        margin-top -13px
+
+  & label
+    cursor pointer
+    position absolute
+    z-index 99
+    width 100%
+    top: 50%;
+    transform: translateY(-50%);
+    left 0
+
+    & .sandwich
+      position absolute
+      height 3px
+      width 100%
+      border-radius 2px
+      background-color #fff
+
+    & .diagonal.part-1
+      position relative
+      float left
+
+    & .horizontal
+      position relative
+      float left
+      margin-top 7px
+
+    & .diagonal.part-2
+      position relative
+      float left
+      margin-top 6px
+
+
+@media (min-width: 1200px)
+
+  .nav
+    &-list
+      display block
+
+    &-logo
+      line-height 170px
+      margin-left 0
+
+  .nav-mobile__sandwich
+    display none

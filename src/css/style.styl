@@ -1,10 +1,13 @@
-@import url("~reset.css")
+$bg-gradient = linear-gradient(to bottom, #0163b4, #01305a), linear-gradient(#1f5b8c, #1f5b8c)
+$font-varelaRound = 'Varela Round', sans-serif
+$font-sansPro = 'Source Sans Pro', sans-serif;
+@require "~reset.css"
+@require "main.styl"
+@require "nav.styl"
+@require "footer.styl"
 
 html
   box-sizing border-box
-  background-image url("../i/logo.png")
-  background-repeat no-repeat
-  background-size 80%
 
 *,
 *:before,
@@ -12,3 +15,61 @@ html
   box-sizing inherit
 
 
+.bg-gradient
+  background-image $bg-gradient
+
+.content-wrap
+  max-width 1190px
+  margin 0 auto
+  position relative
+
+.section-title
+  color #1d96dd
+  font-family $font-varelaRound
+  font-size 30px
+  text-align center
+  margin 0 0 60px
+
+.btn
+  display inline-block
+  font-family $font-sansPro
+  font-size 19px
+  color #ffffff
+  text-decoration none
+  border-radius 4px
+  background-color #0e72bd
+  border solid 1px #c0d4e2
+  padding 10px 15px
+
+  &:hover,
+  &:active
+    background-color #0d8dee
+    border solid 1px #c0d4e2
+    
+.github-link
+  background url("../i/svg/Githab_logo.svg") no-repeat center
+  background-size 100%
+  display inline-block
+  width 30px
+  height 30px
+  margin-bottom 30px
+
+
+.mb-m-30
+  margin-bottom 30px
+
+.mr-l-20
+  margin-right 0
+
+.ml-l-20
+  margin-left 0
+
+@media (min-width: 1200px)
+  .mb-m-30
+    margin-bottom 0
+
+  .mr-l-20
+    margin-right 20px
+
+  .ml-l-20
+    margin-left 20px

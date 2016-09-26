@@ -3,6 +3,7 @@
 const NODE_ENV = process.env.NODE_ENV || 'development';
 const webpack = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const path = require('path');
 const autoprefixer = require('autoprefixer');
 
 module.exports = {
@@ -74,7 +75,6 @@ if (NODE_ENV === 'production') {
     module.exports.plugins.push(
         new webpack.optimize.UglifyJsPlugin({
             compress: {
-                // don't show unreachable variables etc
                 warnings:     false,
                 drop_console: true,
                 unsafe:       true

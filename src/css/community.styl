@@ -1,0 +1,75 @@
+.community
+
+  &-content,
+  &-people
+    padding 60px 0
+
+  &-people
+    background-image linear-gradient(to bottom, rgba(222, 230, 242, 0.4), rgba(182, 235, 250, 0.21)), linear-gradient(rgba(17, 122, 201, 0.07), rgba(17, 122, 201, 0.07))
+
+  &-item__wrap,
+  &-people__wrap
+    display flex
+    flex-direction row
+    flex-wrap wrap
+    justify-content center
+    align-content flex-start
+    align-items flex-start
+
+  &-item,
+  &-person
+    font-family $font-sansPro
+    font-size 19px
+    text-align center
+    color #5b5b5b
+    margin-bottom 20px
+    width 100%
+    display inline-block
+
+  &-avatar
+    position relative
+    margin 0 auto 10px
+    width 125px
+    height 125px
+    overflow hidden
+    border 3px solid #1d96dd
+    border-radius 50%
+
+    & img
+      position absolute
+      margin: 50% 0 0 50%;
+      top: -62px;
+      left: -62px;
+
+  &-title
+    font-weight bold
+    color #0c6dbf
+    margin-bottom 15px
+
+  &-desc
+    line-height 25px
+    margin-bottom 10px
+
+  &-link
+    color #0b6dbf
+    text-decoration none
+
+    &:hover,
+    &:active
+      color #0d8dee
+      text-decoration underline
+
+
+@media (min-width: 768px)
+  .community-item
+    width 50%
+
+  .community-person
+    width 50%
+
+@media (min-width: 1200px)
+  .community-item
+      width 33%
+
+  .community-person
+      width 25%

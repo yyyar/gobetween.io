@@ -6,78 +6,149 @@
     <title>Gobetween</title>
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro|Varela+Round" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
-    <script src="js/particles.js"></script>
     <script src="js/main.js"></script>
 </head>
 <body>
-    <section class="header-section">
-        <header>
-            <div class="content-wrap">
-                <a href="#" class="nav-logo">gobetween</a>
-                <div class="nav-mobile__sandwich">
-                    <input type="checkbox" id="mobile-sandwich" />
-                    <label for="mobile-sandwich" class="mobile-sandwich">
-                        <div class="sandwich diagonal part-1"></div>
-                        <div class="sandwich horizontal"></div>
-                        <div class="sandwich diagonal part-2"></div>
-                    </label>
-                </div>
-                <nav>
-                    <ul class="nav-list">
-                        <li class="nav-item"><a href="#" class="nav-link">Documetation</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Community</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link active">Downloads</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
-    </section>
-    <section class="community-content">
+<section class="header-section">
+    <header>
         <div class="content-wrap">
-            <h1 class="section-title">
-                Downloads
-                <br />
-                <span class="section-sub-title">Current version: v0.3.0</span>
-            </h1>
-            <div class="community-item__wrap">
-                <div class="community-item">
-                    <h3 class="community-title">Github</h3>
-                    <div class="community-desc">
-                        All development happens
-                    </div>
-                    <a href="#" class="community-link">Here</a>
+            <a href="/" class="nav-logo">gobetween</a>
+            <div class="nav-mobile__sandwich">
+                <input type="checkbox" id="mobile-sandwich"/>
+                <label for="mobile-sandwich" class="mobile-sandwich">
+                    <div class="sandwich diagonal part-1"></div>
+                    <div class="sandwich horizontal"></div>
+                    <div class="sandwich diagonal part-2"></div>
+                </label>
+            </div>
+            <nav>
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="/documentation.html" class="nav-link">Documetation</a></li>
+                    <li class="nav-item"><a href="/community.html" class="nav-link">Community</a></li>
+                    <li class="nav-item"><a href="/downloads.html" class="nav-link active">Downloads</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+</section>
+<section class="download-content">
+    <div class="content-wrap">
+        <h1 class="section-title">
+            Downloads
+            <br/>
+            <span class="section-sub-title">Current version: v0.3.0</span>
+        </h1>
+        <div class="download-item__wrap">
+            <div class="download-item">
+                <div class="download-icon">
+                    <img src="i/svg/Linux_logo.svg" alt="icon"/>
                 </div>
-                <div class="community-item">
-                    <h3 class="community-title">Github issues</h3>
-                    <div class="community-desc">
-                        Bugs report, proposing  new features
+                <div class="download-item__content">
+                    <h3 class="download-title">
+                        Linux
+                        <span class="download-sub-title">(tar.gz)</span>
+                    </h3>
+                    <div class="download-links">
+                        <a href="#" class="download-link">x86</a>
+                        <a href="#" class="download-link">x64</a>
                     </div>
-                    <a href="#" class="community-link">Here</a>
                 </div>
-                <div class="community-item">
-                    <h3 class="community-title">Gitter</h3>
-                    <div class="community-desc">
-                        General questions and answers and discussions
+            </div>
+            <div class="download-item">
+                <div class="download-icon">
+                    <img src="i/svg/Win_logo.svg" alt="icon"/>
+                </div>
+                <div class="download-item__content">
+                    <h3 class="download-title">
+                        Windows
+                        <span class="download-sub-title">(zip)</span>
+                    </h3>
+                    <div class="download-links">
+                        <a href="#" class="download-link">x86</a>
+                        <a href="#" class="download-link">x64</a>
                     </div>
-                    <a href="#" class="community-link">Here</a>
+                </div>
+            </div>
+            <div class="download-item">
+                <div class="download-icon">
+                    <img src="i/svg/Darwin_logo.svg" alt="icon"/>
+                </div>
+                <div class="download-item__content">
+                    <h3 class="download-title">
+                        Darwin
+                        <span class="download-sub-title">(zip)</span>
+                    </h3>
+                    <div class="download-links">
+                        <a href="#" class="download-link">x86</a>
+                        <a href="#" class="download-link">x64</a>
+                    </div>
+                </div>
+            </div>
+            <div class="download-item">
+                <div class="download-icon">
+                    <img src="i/svg/Docker_logo.svg" alt="icon"/>
+                </div>
+                <div class="download-item__content">
+                    <h3 class="download-title">
+                        Docker Image
+                    </h3>
+                    <a href="#" class="download-link">Gobetween image</a>
+                </div>
+            </div>
+            <div class="download-item">
+                <div class="download-icon">
+                    <img src="i/svg/Source_code.svg" alt="icon"/>
+                </div>
+                <div class="download-item__content">
+                    <h3 class="download-title">
+                        Source Code
+                    </h3>
+                    <a href="#" class="download-link">source</a>
                 </div>
             </div>
         </div>
-    </section>
-    <section class="community-people">
-        <div class="content-wrap">
-            <h1 class="section-title">
-                People
-                <br />
-                <span class="section-sub-title">The following people are behing Gobetween project. Each of them contribute to Gobetween.</span>
-            </h1>
-        </div>
-    </section>
+    </div>
+</section>
+<section class="release-notes">
+    <div class="content-wrap">
+        <h3 class="release-notes__title">Release Notes</h3>
+        <div class="release-content">
+            <p>This release brings several new features and improvemets, as well as bugfixes. Major things are integrations with Consul, more flexible command-line options and Access control module.</p>
 
-    <footer>
-        <a href="" class="github-link"></a>
-        <br />
-        <span>Copyright 2016</span>
-    </footer>
+            <h5 class="release-content__title">New Features</h5>
+            <ul>
+                <li>Consul Discovery</li>
+                <li>Ability to load config not only from file, but also from URL and Consul key-value storage on startup</li>
+                <li>More powerful command-line interface</li>
+                <li>Leastbandwidth balancing  strategy</li>
+            </ul>
+
+            <h5 class="release-content__title">New Features</h5>
+            <ul>
+                <li>Allow passing parameters as GOBETWEEN env variable instead of args</li>
+                <li>Possibility to specify format in /dump endpoint (toml or json)</li>
+                <li>Refused connections counters for backends</li>
+                <li>TCP mode for DNS SRV Discovery</li>
+            </ul>
+
+            <h5 class="release-content__title">New Features</h5>
+            <ul>
+                <li>Creating server with the same name via rest api causes api to freeze</li>
+                <li>Runtime error when no [default] section is present in config</li>
+            </ul>
+
+            <h5 class="release-content__title">New Features</h5>
+            <ul>
+                <li>Replaced big.Int with uint64 for simplicity and performance reasons.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <a href="" class="github-link"></a>
+    <br/>
+    <span>Copyright 2016</span>
+</footer>
 </body>
 </html>

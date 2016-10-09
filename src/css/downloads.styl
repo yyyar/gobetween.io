@@ -1,0 +1,124 @@
+.download
+
+  &-content
+    padding 60px 0
+
+  &-item__wrap
+    display flex
+    flex-direction row
+    flex-wrap wrap
+    justify-content center
+    align-content flex-start
+    align-items center
+
+  &-item
+    position relative
+    font-family $font-sansPro
+    font-size 0
+    color #5b5b5b
+    width 100%
+    display inline-block
+    margin-bottom 20px
+    padding-top 20px
+    border-top 1px solid #b6cedc
+
+    &:last-child
+      padding-right 0
+      margin-right 0
+      padding-bottom 20px
+      border-bottom 1px solid #b6cedc
+
+      &:after
+        display none
+
+    &__content
+      font-size 19px
+      display inline-block
+      vertical-align middle
+
+  &-icon
+    display inline-block
+    vertical-align middle
+    padding-right 30px
+
+  &-title
+    font-weight bold
+    color #0c6dbf
+    margin-bottom 10px
+
+  &-sub-title
+    font-size 14px
+    color #6e6e6e
+    font-weight normal
+
+  &-desc
+    line-height 25px
+    margin-bottom 10px
+
+  &-link
+    color #0c6ec0
+    text-decoration none
+
+    &:hover,
+    &:active
+      color #0d8dee
+      text-decoration underline
+
+  &-links
+    font-size 0
+
+    & .download-link
+        font-size 19px
+
+    & .download-link:first-child
+      border-right 1px solid #b6cedc
+      padding-right 14px
+
+    & .download-link:last-child
+      padding-left 14px
+
+.release
+  &-notes
+    padding 60px 0
+    background-image linear-gradient(to bottom, rgba(222, 230, 242, 0.4), rgba(182, 235, 250, 0.21)), linear-gradient(rgba(17, 122, 201, 0.07), rgba(17, 122, 201, 0.07))
+
+    &__title
+      text-align center
+      font-family $font-sansPro
+      font-size 25px
+      font-weight bold
+      color #0c6dbf
+
+  &-content
+    font-family $font-sansPro
+    font-size 19px
+    color #5b5b5b
+
+    &__title
+      font-family $font-sansPro
+      color #0c6dbf
+
+
+@media (min-width: 768px)
+  .download-item
+    width auto
+    padding-right 28px
+    margin-right 28px
+    padding-top 0
+    border none
+
+    &:last-child
+      padding-right 0
+      margin-right 0
+      padding-bottom 0
+      border none
+
+    &:after
+      content ''
+      position absolute
+      right 0
+      width 1px
+      height 47px
+      background #b6cedc
+      top: 50%;
+      transform: translateY(-50%);

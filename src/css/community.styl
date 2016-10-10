@@ -62,14 +62,31 @@
 
 @media (min-width: 768px)
   .community-item
-    width 50%
+    width 293px
+    position relative
+    padding-right 28px
+    margin-right 28px
+
+    &:after
+      content ''
+      position absolute
+      right 0
+      width 1px
+      height 47px
+      background #b6cedc
+      top: 30px
+
+    &:last-child
+      margin-right 0
+      padding-right 0
+
+      &:after
+        display none
 
   .community-person
     width 50%
 
 @media (min-width: 1200px)
-  .community-item
-      width 33%
 
   .community-person
       width 25%

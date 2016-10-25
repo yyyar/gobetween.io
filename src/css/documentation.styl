@@ -1,0 +1,89 @@
+.documentation
+  padding 60px 0
+
+  & .section-title
+    margin-bottom 60px
+
+  &-content
+
+    & *
+      font-family $font-sansPro
+      font-size 19px
+      color #5b5b5b
+
+    & p
+      margin-bottom 15px
+
+    & h2
+      font-size 25px
+      font-weight bold
+      color #0c6dbf
+      margin-bottom 30px
+
+    & ul
+      padding-left 20px
+      margin-bottom 15px
+
+    & li
+      list-style disc
+      margin-bottom 10px
+
+      & li
+        margin-bottom 10px
+
+      & a
+        color #0c6dbf
+
+    & code
+      background-color #e3e3e3
+      font-size 17px
+      color #5b5b5b
+      padding 0 5px
+
+    & strong
+      font-weight bold
+
+    & img
+      width 100%
+
+
+aside
+  background-image linear-gradient(to bottom, rgba(222, 230, 242, 0.4), rgba(182, 235, 250, 0.21)), linear-gradient(rgba(17, 122, 201, 0.07), rgba(17, 122, 201, 0.07))
+
+.doc-nav
+
+  &-list
+    font-family $font-sansPro
+    font-size 19px
+
+  &-item
+    padding 18px 0 18px 30px
+    border-bottom solid 1px #b6cedc
+
+    & .doc-nav-list
+
+      & .doc-nav-item
+        border-bottom none
+        padding-left 0
+
+  &-link
+    color #0c6dbf
+    text-decoration none
+
+    &:hover,
+    &:active
+      color #0d8dee
+      text-decoration underline
+
+
+@media (min-width: 768px)
+  aside
+    float left
+    width 25%
+    border-top solid 1px #b6cedc
+
+  .documentation
+
+    &-content
+      width 70%
+      float right

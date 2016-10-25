@@ -24,6 +24,7 @@
     margin-bottom 20px
     padding-top 20px
     border-top 1px solid #b6cedc
+    text-align center
 
     &:last-child
       padding-right 0
@@ -43,6 +44,8 @@
     display inline-block
     vertical-align middle
     padding-right 30px
+    min-width 95px
+    text-align center
 
   &-title
     font-weight bold
@@ -97,7 +100,7 @@
     font-family $font-sansPro
     font-size 19px
     color #5b5b5b
-    padding 0 13%
+    padding 0
 
     & > *
       margin-bottom 15px
@@ -130,25 +133,37 @@
 
 
 @media (min-width: 768px)
-  .download-item
-    width auto
-    padding-right 28px
-    margin-right 28px
-    padding-top 0
-    border none
+  .download
 
-    &:last-child
-      padding-right 0
-      margin-right 0
-      padding-bottom 0
+    &-icon
+      margin-left 0
+      min-width auto
+      text-align inherit
+
+    &-item
+      width auto
+      padding-right 28px
+      margin-right 28px
+      padding-top 0
       border none
 
-    &:after
-      content ''
-      position absolute
-      right 0
-      width 1px
-      height 47px
-      background #b6cedc
-      top: 50%;
-      transform: translateY(-50%);
+      &:last-child
+        padding-right 0
+        margin-right 0
+        padding-bottom 0
+        border none
+
+      &:after
+        content ''
+        position absolute
+        right 0
+        width 1px
+        height 47px
+        background #b6cedc
+        top: 50%;
+        transform: translateY(-50%);
+
+  .release
+
+    &-content
+      padding 0 13%

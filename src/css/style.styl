@@ -1,6 +1,7 @@
 $bg-gradient = linear-gradient(to bottom, #0163b4, #01305a), linear-gradient(#1f5b8c, #1f5b8c)
 $font-varelaRound = 'Varela Round', sans-serif
 $font-sansPro = 'Source Sans Pro', sans-serif;
+
 @require "~reset.css"
 @require "main.styl"
 @require "community.styl"
@@ -16,6 +17,10 @@ html
 *:before,
 *:after
   box-sizing inherit
+
+section
+  padding-left 30px !important
+  padding-right 30px !important
 
 
 .bg-gradient
@@ -79,6 +84,11 @@ html
 
 .ml-l-20
   margin-left 0
+
+@media (min-width: 786px)
+  section
+    padding-left 0 !important
+    padding-right 0 !important
 
 @media (min-width: 1200px)
   .mb-m-30

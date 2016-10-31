@@ -4,6 +4,30 @@
   & .section-title
     margin-bottom 60px
 
+  &-side-bar
+
+    & ul
+      font-family $font-sansPro
+      font-size 19px
+
+    & li
+      padding 18px 20px 18px 30px
+      border-bottom solid 1px #b6cedc
+
+      & li
+        border-bottom none
+        padding-left 0
+
+    & a
+      color #0c6dbf
+      text-decoration none
+
+      &:hover,
+      &:active
+        color #0d8dee
+        text-decoration underline
+
+
   &-content
 
     & *
@@ -31,14 +55,23 @@
       & li
         margin-bottom 10px
 
-      & a
-        color #0c6dbf
+    & a
+      color #0c6dbf !important
 
     & code
       background-color #e3e3e3
       font-size 17px
       color #5b5b5b
       padding 0 5px
+
+    & pre
+      background-color #e3e3e3
+      padding 30px
+      overflow auto
+      margin 60px 0
+
+      & code
+        padding 0
 
     & strong
       font-weight bold

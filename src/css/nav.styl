@@ -1,3 +1,13 @@
+nav
+  transition: margin-top 0.3s;
+  position fixed
+  top 0
+  left 0
+  width 100vw
+  height 100vh
+  background-image linear-gradient(to bottom, #0163b4, #01305a), linear-gradient(#1f5b8c, #1f5b8c)
+  margin-top -100vh
+
 .nav
   &-logo
     display block
@@ -90,12 +100,76 @@
       float left
       margin-top 6px
 
-
-@media (min-width: 1200px)
+.show-mob-nav
+  z-index 1
+  margin-top 0
 
   .nav
     &-list
+      display flex
+      flex-direction column
+      flex-wrap wrap
+      justify-content center
+      align-content stretch
+      align-items center
+      float none
+      line-height normal
+      position absolute
+      top 0
+      left 0
+      right 0
+      bottom 0
+      margin 0
+
+    &-item
+      float none
+      text-align center
+
+    &-link
+      font-family $font-varelaRound
+      font-size 30px
+      line-height 1
+      color #ffffff
+      border-bottom 0
+      margin-bottom 40px
+
+@media (min-width: 1024px)
+  nav
+    position static
+    margin-top 0
+    background none
+    width auto
+    height auto
+
+@media (min-width: 1200px)
+
+  .nav,
+  .show-mob-nav .nav
+
+    &-list
+      list-style-type: none;
+      float right
+      line-height 170px
       display block
+      position static
+
+    &-item
+      float left
+
+    &-link
+      display inline-block
+      line-height 31px
+      margin 0 30px
+      font-size 19px
+      font-family $font-varelaRound
+      color #54acee
+      text-decoration none
+
+      &:hover,
+      &:active,
+      &.active
+        color #fff
+        border-bottom  1px solid #ffffff
 
     &-logo
       line-height 170px

@@ -26,7 +26,7 @@
     "webpack-dev-server": "2.1.0-beta.0",
     "webpack": "2.1.0-beta.22",
     "simple-ajax": "2.6.0",
-    "markdown-js": "0.0.3"
+    "markdown": "0.5.0"
   },
   "dependencies": {
     "jquery": "^3.1.0",

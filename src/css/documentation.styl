@@ -1,10 +1,11 @@
 .documentation
-  padding 60px 0
+  padding 40px 0 50px
 
   & .section-title
-    margin-bottom 60px
+    margin-bottom 35px
 
   &-side-bar
+    margin-bottom 40px
 
     & ul
       font-family $font-sansPro
@@ -29,6 +30,7 @@
 
 
   &-content
+    padding 0 30px
 
     & *
       font-family $font-sansPro
@@ -43,6 +45,7 @@
       font-weight bold
       color #0c6dbf
       margin-bottom 30px
+      text-align center
 
     & ul
       padding-left 20px
@@ -68,13 +71,21 @@
       background-color #e3e3e3
       padding 30px
       overflow auto
-      margin 60px 0
+      margin 40px -30px
+      border solid 1px #a5a3a3
 
       & code
         padding 0
 
     & strong
       font-weight bold
+
+    & img
+      max-width 100%
+
+section.documentation
+  padding-left 0 !important
+  padding-right 0 !important
 
 
 
@@ -115,7 +126,20 @@ aside
     border-top solid 1px #b6cedc
 
   .documentation
+    padding 60px 0
+
+    & .section-title
+      margin-bottom 60px
+
+    &-side-bar
+      margin-bottom 0
 
     &-content
       width 70%
       float right
+
+      & pre
+        margin 60px 0
+
+      & h2
+        text-align left

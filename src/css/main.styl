@@ -5,6 +5,7 @@ header
 .main
   &-section
     position relative
+    overflow hidden
 
   &-content
     width 100%
@@ -102,11 +103,14 @@ header
 @media (min-width: 768px)
   .feature-item
     width 50%
+    padding 0 10px
 
-@media (min-width: 1200px)
+@media (min-width: 1024px)
   header
     height 170px
     min-height 170px
+
+@media (min-width: 1200px)
 
   .main
     &-section

@@ -3,7 +3,8 @@
   "version": "0.0.1",
 
   "scripts": {
-    "start": "webpack-dev-server"
+    "start": "webpack-dev-server",
+    "start:prod": "NODE_ENV=production webpack-dev-server"
   },
 
   "devDependencies": {
@@ -19,10 +20,13 @@
     "file-loader": "^0.9.0",
     "markdown-loader": "0.1.7",
     "html-loader": "0.4.4",
+    "exports-loader": "0.6.3",
     "autoprefixer": "^6.4.0",
     "extract-text-webpack-plugin": "2.0.0-beta.3",
     "webpack-dev-server": "2.1.0-beta.0",
-    "webpack": "2.1.0-beta.22"
+    "webpack": "2.1.0-beta.22",
+    "simple-ajax": "2.6.0",
+    "markdown-js": "0.0.3"
   },
   "dependencies": {
     "jquery": "^3.1.0",

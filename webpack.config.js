@@ -60,6 +60,10 @@ module.exports = {
         },{
             test: /\.md$/,
             loader: "html!markdown"
+        },
+        {
+            test: /particles\.js/,
+            loader: 'exports?particlesJS=window.particlesJS,pJSDom=window.pJSDom'
         }]
     },
 

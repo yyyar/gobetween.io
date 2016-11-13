@@ -17,7 +17,25 @@ if (page) {
         document.getElementsByClassName('documentation-content')[0].innerHTML = file;
     };
 
-    documentationSideBar.addEventListener('click', function (e) {
+    const scrollTo = (y, duration) => {
+        if (duration <= 0) return;
+        var difference = y - document.body.scrollTop;
+        var perTick = difference / duration * 10;
+
+        setTimeout(() => {
+            document.body.scrollTop = document.body.scrollTop + perTick;
+            if (document.body.scrollTop === y) return;
+            scrollTo(y, duration - 10);
+        }, 10);
+    };
+
+    documentationSideBar.addEventListener('click', e => {
+        const activeLink = document.querySelectorAll('.documentation-side-bar a.active')[0];
+        activeLink && activeLink.classList.remove('active');
+
+        e.target.setAttribute('class', 'active');
+        scrollTo(210, 200);
+
         loadDoc(e.target.hash.substr(1));
     });
 

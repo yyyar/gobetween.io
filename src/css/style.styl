@@ -47,9 +47,27 @@ footer
   color #5b5b5b
 
 .header-section
+  width 100%
+  transition: top 0.5s;
   display block
   background: #0163b4
   z-index 3
+
+.show-header
+  padding-top 72px
+
+  & .header-section
+    position fixed
+    top 0
+
+.hide-header
+  padding-top 72px
+
+  & .header-section
+    position fixed
+    top -72px
+
+
 
 .btn
   display inline-block
@@ -90,6 +108,17 @@ footer
   margin-left 0
 
 @media (min-width: 786px)
+
+  .show-header
+    padding-top 170px
+
+  .hide-header
+    padding-top 170px
+
+    & .header-section
+      position fixed
+      top -170px
+
   section
     padding-left 0 !important
     padding-right 0 !important

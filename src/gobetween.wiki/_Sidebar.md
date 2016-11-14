@@ -8,7 +8,7 @@
     - [Windows specific notes](#Windows-specific-notes)
 - Use Cases
     - [Simple load balancing](#Static-balancing)
-    - [SRV balancing](#SRV-balancing)
+    - [SRV balancing](#SRV-Balancing)
     - [Docker / Swarm balancing](#Docker---Swarm-Balancing)
     - [ElasticSearch cluster with Exec discovery](#ElasticSearch-cluster-with-Exec-discovery)
     - [Service balancing with Consul discovery and Docker Registrator](#Service-balancing-with-Consul-discovery-and-Docker-Registrator)

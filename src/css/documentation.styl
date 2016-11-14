@@ -34,58 +34,69 @@
 
 
   &-content
-    padding 0 30px
 
-    & *
-      font-family $font-sansPro
-      font-size 19px
-      color #5b5b5b
+    &__wrap
+      padding 0 30px
 
-    & p
-      margin-bottom 15px
+      & .documentation-content-title
+        font-family $font-sansPro
+        font-size 25px
+        font-weight bold
+        color #0c6dbf
+        margin-bottom 30px
+        text-align center
 
-    & h2
-      font-size 25px
-      font-weight bold
-      color #0c6dbf
-      margin-bottom 30px
-      text-align center
+      & *
+        font-family $font-sansPro
+        font-size 19px
+        color #5b5b5b
+        line-height normal
 
-    & ul
-      padding-left 20px
-      margin-bottom 15px
+      & p
+        margin-bottom 15px
 
-    & li
-      list-style disc
-      margin-bottom 10px
+      & h2
+        font-size 25px
+        font-weight bold
+        color #0c6dbf
+        margin-bottom 30px
+        text-align center
+
+      & ul
+        padding-left 20px
+        margin-bottom 15px
 
       & li
+        list-style disc
         margin-bottom 10px
 
-    & a
-      color #0c6dbf !important
+        & li
+          margin-bottom 10px
 
-    & code
-      background-color #e3e3e3
-      font-size 17px
-      color #5b5b5b
-      padding 0 5px
-
-    & pre
-      background-color #e3e3e3
-      padding 30px
-      overflow auto
-      margin 40px -30px
-      border solid 1px #a5a3a3
+      & a
+        color #0c6dbf !important
 
       & code
-        padding 0
+        background-color #e3e3e3
+        font-size 17px
+        color #5b5b5b
+        padding 0 5px
 
-    & strong
-      font-weight bold
+      & pre
+        background-color #e3e3e3
+        padding 30px
+        overflow auto
+        margin 40px -30px
+        border solid 1px #a5a3a3
 
-    & img
-      max-width 100%
+        & code
+          padding 0
+
+      & strong
+        font-weight bold
+
+      & img
+        max-width 100%
 
 section.documentation
   padding-left 0 !important
@@ -139,11 +150,17 @@ aside
       margin-bottom 0
 
     &-content
-      width 70%
-      float right
 
-      & pre
-        margin 60px 0
+      &__wrap
 
-      & h2
-        text-align left
+        & .documentation-content-title
+          text-align left
+
+        width 70%
+        float right
+
+        & pre
+          margin 60px 0
+
+        & h2
+          text-align left

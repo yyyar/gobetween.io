@@ -55,7 +55,7 @@ module.exports = {
                 loader: "css?minimize!postcss!stylus"
             })
         },{
-            test: /\.(jpe?g|png|gif|svg)$/i,
+            test: /\.(jpe?g|jpg|png|gif|svg)$/i,
             loaders: [ 'file?name=[1]&regExp=src/(.*)', 'img?minimize&optimizationLevel=5&progressive=true' ]
         },{
             test: /\.md$/,

@@ -1,7 +1,7 @@
 import particles from './particles.js'
-import Doc from './doc.js'
-import Downloads from './downloads.js'
-import MobileNav from './mobileNav.js'
+import './doc.js'
+import './downloads.js'
+import './mobileNav.js'
 
 require('../css/style.styl');
 
@@ -10,8 +10,6 @@ const headeSection = document.getElementsByClassName('header-section');
 const headerHeight = document.getElementsByTagName('header')[0].offsetHeight;
 let currentScrollTop = document.body.scrollTop;
 let previusScrollTop = currentScrollTop;
-
-console.log(headerHeight);
 
 if (particlesJs) {
     particles.particlesJS.load('particles-js', './particlesjs-config.json', () => {

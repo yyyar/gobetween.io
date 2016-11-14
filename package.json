@@ -29,7 +29,6 @@
     "markdown": "0.5.0"
   },
   "dependencies": {
-    "jquery": "^3.1.0",
     "reset.css": "^2.0.2",
     "particles.js": "2.0.0"
   }

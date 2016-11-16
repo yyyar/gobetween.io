@@ -1,0 +1,3 @@
+[submodule "src/gobetween.wiki"]
+	path = src/gobetween.wiki
+	url = git@github.com:yyyar/gobetween.wiki.git

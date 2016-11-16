@@ -20,6 +20,14 @@ if (page) {
         }
 
         document.getElementsByClassName('documentation-content')[0].innerHTML = file;
+
+
+    if (hljs) {
+            let codes = document.querySelectorAll('code');
+            for (let i in codes) {
+                hljs.highlightBlock(codes[i]);
+            }
+        }
     };
 
     const scrollTo = (y, duration) => {

@@ -17,7 +17,6 @@ if (page) {
 
         if (link.length) {
             document.getElementsByClassName('documentation-content-title')[0].innerHTML = link[0].innerText;
-            console.log(document.getElementsByClassName('documentation-content-title')[0].offsetTop);
         }
 
         document.getElementsByClassName('documentation-content')[0].innerHTML = file;
@@ -52,6 +51,10 @@ if (page) {
     };
 
     documentationSideBar.addEventListener('click', e => {
+        if (e.target.nodeName !== 'A') return;
+        e.preventDefault();
+        e.stopPropagation();
+        location.hash = e.target.attributes['href'].value;
         const activeLink = document.querySelectorAll('.documentation-side-bar a.active')[0];
         const title = document.getElementsByClassName('documentation-content-title')[0];
         let y = 0;
@@ -65,11 +68,10 @@ if (page) {
 
         scrollTo(y, 200);
 
-        loadDoc(e.target.hash.substr(1));
+        loadDoc(location.hash.substr(1));
     });
 
-    documentationSideBar.innerHTML = Sidebar;
+    documentationSideBar.innerHTML = Sidebar.replace(new RegExp('href="', 'g'), 'href="#');
 
     loadDoc(location.hash.substr(1));
-
 }

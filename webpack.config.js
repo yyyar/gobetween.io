@@ -7,14 +7,14 @@ const path = require('path');
 const autoprefixer = require('autoprefixer');
 
 module.exports = {
-    context: __dirname + '/src/js',
+    context: __dirname + '/src',
 
     entry: {
-        main: "./main"
+        main: "./js/main"
     },
     output: {
-        path: __dirname + '/dist',
-        publicPath: '/',
+        path: __dirname,
+        publicPath: './',
         filename: "js/[name].js"
     },
 
@@ -56,7 +56,7 @@ module.exports = {
             })
         },{
             test: /\.(jpe?g|jpg|png|gif|svg)$/i,
-            loaders: [ 'file?name=[1]&regExp=src/(.*)', 'img?minimize&optimizationLevel=5&progressive=true' ]
+            loaders: [ 'file?name=../[path][name].[ext]', 'img?minimize&optimizationLevel=5&progressive=true' ]
         },{
             test: /\.md$/,
             loader: "html!markdown"
@@ -74,7 +74,7 @@ module.exports = {
     devServer: {
         host: 'localhost',
         port: 8080,
-        contentBase: __dirname + '/dist'
+        contentBase: __dirname
     }
 };
 

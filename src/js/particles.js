@@ -384,7 +384,7 @@ var pJS = function(tag_id, params){
         ratio: sh.image.width / sh.image.height
       }
       if(!this.img.ratio) this.img.ratio = 1;
-      if(pJS.tmp.img_type == 'svg' && pJS.tmp.source_svg != undefined){
+      if(pJS.tmp.img_type == 'svg__' && pJS.tmp.source_svg != undefined){
         pJS.fn.vendors.createSvgImg(this);
         if(pJS.tmp.pushing){
           this.img.loaded = false;
@@ -470,7 +470,7 @@ var pJS = function(tag_id, params){
           );
         }
 
-        if(pJS.tmp.img_type == 'svg'){
+        if(pJS.tmp.img_type == 'svg__'){
           var img_obj = p.img.obj;
         }else{
           var img_obj = pJS.tmp.img_obj;
@@ -1203,7 +1203,7 @@ var pJS = function(tag_id, params){
 
   pJS.fn.vendors.createSvgImg = function(p){
 
-    /* set color to svg element */
+    /* set color to svg__ element */
     var svgXml = pJS.tmp.source_svg,
         rgbHex = /#([0-9A-F]{3,6})/gi,
         coloredSvgXml = svgXml.replace(rgbHex, function (m, r, g, b) {
@@ -1215,8 +1215,8 @@ var pJS = function(tag_id, params){
           return color_value;
         });
 
-    /* prepare to create img with colored svg */
-    var svg = new Blob([coloredSvgXml], {type: 'image/svg+xml;charset=utf-8'}),
+    /* prepare to create img with colored svg__ */
+    var svg = new Blob([coloredSvgXml], {type: 'image/svg__+xml;charset=utf-8'}),
         DOMURL = window.URL || window.webkitURL || window,
         url = DOMURL.createObjectURL(svg);
 
@@ -1273,7 +1273,7 @@ var pJS = function(tag_id, params){
 
     if(pJS.particles.shape.image.src != ''){
 
-      if(type == 'svg'){
+      if(type == 'svg__'){
 
         var xhr = new XMLHttpRequest();
         xhr.open('GET', pJS.particles.shape.image.src);
@@ -1313,7 +1313,7 @@ var pJS = function(tag_id, params){
 
     if(pJS.particles.shape.type == 'image'){
 
-      if(pJS.tmp.img_type == 'svg'){
+      if(pJS.tmp.img_type == 'svg__'){
 
         if(pJS.tmp.count_svg >= pJS.particles.number.value){
           pJS.fn.particlesDraw();
@@ -1350,7 +1350,7 @@ var pJS = function(tag_id, params){
     // if shape is image
     if(pJS.particles.shape.type == 'image'){
 
-      if(pJS.tmp.img_type == 'svg' && pJS.tmp.source_svg == undefined){
+      if(pJS.tmp.img_type == 'svg__' && pJS.tmp.source_svg == undefined){
         pJS.tmp.checkAnimFrame = requestAnimFrame(check);
       }else{
         //console.log('images loaded! cancel check');

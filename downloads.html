@@ -11,7 +11,7 @@
 <section class="header-section">
     <header>
         <div class="content-wrap">
-            <a href="/" class="nav-logo">gobetween</a>
+            <a href="./index.html" class="nav-logo">gobetween</a>
             <div class="nav-mobile__sandwich">
                 <input type="checkbox" id="mobile-sandwich"/>
                 <label for="mobile-sandwich" class="mobile-sandwich">
@@ -22,9 +22,9 @@
             </div>
             <nav>
                 <ul class="nav-list">
-                    <li class="nav-item"><a href="/documentation.html" class="nav-link">Documetation</a></li>
-                    <li class="nav-item"><a href="/community.html" class="nav-link">Community</a></li>
-                    <li class="nav-item"><a href="/downloads.html" class="nav-link active">Downloads</a></li>
+                    <li class="nav-item"><a href="./documentation.html" class="nav-link">Documetation</a></li>
+                    <li class="nav-item"><a href="./community.html" class="nav-link">Community</a></li>
+                    <li class="nav-item"><a href="./downloads.html" class="nav-link">Downloads</a></li>
                 </ul>
             </nav>
         </div>
@@ -112,34 +112,7 @@
     <div class="content-wrap">
         <h3 class="release-notes__title">Release Notes</h3>
         <div class="release-content">
-            <p>This release brings several new features and improvemets, as well as bugfixes. Major things are integrations with Consul, more flexible command-line options and Access control module.</p>
 
-            <h5 class="release-content__title">New Features</h5>
-            <ul>
-                <li>Consul Discovery</li>
-                <li>Ability to load config not only from file, but also from URL and Consul key-value storage on startup</li>
-                <li>More powerful command-line interface</li>
-                <li>Leastbandwidth balancing  strategy</li>
-            </ul>
-
-            <h5 class="release-content__title">New Features</h5>
-            <ul>
-                <li>Allow passing parameters as GOBETWEEN env variable instead of args</li>
-                <li>Possibility to specify format in /dump endpoint (toml or json)</li>
-                <li>Refused connections counters for backends</li>
-                <li>TCP mode for DNS SRV Discovery</li>
-            </ul>
-
-            <h5 class="release-content__title">New Features</h5>
-            <ul>
-                <li>Creating server with the same name via rest api causes api to freeze</li>
-                <li>Runtime error when no [default] section is present in config</li>
-            </ul>
-
-            <h5 class="release-content__title">New Features</h5>
-            <ul>
-                <li>Replaced big.Int with uint64 for simplicity and performance reasons.</li>
-            </ul>
         </div>
     </div>
 </section>
@@ -156,6 +129,6 @@
     <br/>
     <span>Copyright 2016</span>
 </footer>
-<script src="js/main.js"></script>
+<script src="./js/main.js"></script>
 </body>
 </html>

@@ -6,6 +6,8 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const path = require('path');
 const autoprefixer = require('autoprefixer');
 
+var env = process.env.NODE_ENV || 'development';
+
 module.exports = {
     context: __dirname + '/src',
 
@@ -18,7 +20,7 @@ module.exports = {
         filename: "js/[name].js"
     },
 
-    watch: NODE_ENV === 'development',
+    watch: env === 'development',
 
     watchOptions: {
         aggregateTimeout: 100

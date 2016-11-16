@@ -24,7 +24,7 @@ if (page) {
 
     if (hljs) {
             let codes = document.querySelectorAll('code');
-            for (let i in codes) {
+            for (var i = 0; i < codes.length; ++i) {
                 hljs.highlightBlock(codes[i]);
             }
         }

@@ -1,4 +1,6 @@
 # gobetween.io
 
-npm start - run dev-server
-npm run build - build
+- npm install -f
+- npm install webpack
+- npm run build
+- npm start - run dev-server

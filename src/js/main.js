@@ -2,6 +2,7 @@ import particles from './particles.js'
 import './doc.js'
 import './downloads.js'
 import './mobileNav.js'
+import './community.js'
 
 require('../css/style.styl');
 
